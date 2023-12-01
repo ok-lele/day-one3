@@ -1,4 +1,4 @@
-@media screen and (max-wdith:550px) {
+@media screen and (max-width:550px) {
     nav, main, footer, article, main ul, header, nav ul, .leroy, .loki { 
         width: 90%;
         display: block;
@@ -15,11 +15,5 @@
     }
     .loki img, .leo img { 
         width:90%; 
-    }
-    main { 
-        grid-template-areas:none; 
-    }      
-    .item-1, .item-3 { 
-        height: 400px;
     }
 }
