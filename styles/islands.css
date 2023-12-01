@@ -1,8 +1,9 @@
 :root {
-    --green:#074817 ;
+    --blue:#11467D;
+    --green:#4C7335;
     --white:#ffffff ;
     font-family: 'Raleway', sans-serif;
-
+    color:var(--blue)
 }
 body, header, main, footer, section, article, aside {
     margin:0px; 
@@ -13,8 +14,8 @@ body, header, main, footer, section, article, aside {
 
 main, header, nav ul, footer {
     display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: lightgray;
+    grid-template-columns:33% 33% 33%;
+    /* background-color: light gray;  */
 }
 
 main section { 
@@ -25,7 +26,7 @@ main section {
 }
 
 /* the following classes will govern the sections and make them work winthin the grid */
-.item1 { 
+.item1 .item8 { 
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -50,7 +51,7 @@ main section {
     grid-column-start: 2;
     grid-column-end: 4;
 }
-.item8, .item9, .item10, .hero-orcas {
+.item9 .hero-orcas {
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -62,8 +63,8 @@ header {
     text-align: center;
 }
 
-header a, header p, nav a { 
-    color: lightgray;
+header a, header p, nav a label { 
+    color: #11467D;
     text-decoration: none;
 }
 .hero-orcas, main section { 
@@ -109,4 +110,7 @@ main section {
 }
 .item2, .item4, .item6 { 
     background-image: none;
+}
+footer { 
+    padding: 5px;
 }
